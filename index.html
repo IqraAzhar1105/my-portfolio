@@ -1,0 +1,680 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Iqra Azhar's personal portfolio showcasing software engineering skills, projects, and learning journey.">
+
+    <meta name="theme-color" content="#07100e">
+
+    <title>Iqra Azhar | Software Engineer in Progress</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Background Decoration -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>iqra<span class="logo-dot">.</span></span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Journey</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="theme-toggle"
+                    id="theme-toggle"
+                    aria-label="Switch color theme">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero section container" id="home">
+
+            <div class="hero-content reveal">
+
+                <span class="availability">
+                    <span class="status-dot"></span>
+                    SOFTWARE ENGINEERING STUDENT
+                </span>
+
+                <p class="hero-greeting">Hello, I'm</p>
+
+                <h1>
+                    Iqra Azhar<span class="accent">.</span>
+                </h1>
+
+                <h2>
+                    I love turning ideas into
+                    <span class="typing-text" id="typing-text">
+                        digital experiences.
+                    </span>
+                </h2>
+
+                <p class="hero-description">
+                    I'm a Software Engineering student passionate about
+                    programming, creative problem-solving, and building
+                    meaningful digital experiences. I'm learning, creating,
+                    and growing one project at a time.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Connect
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </a>
+
+                </div>
+
+                <div class="social-links">
+
+                    <a href="https://github.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/iqra-azhar-271b64436
+"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="mailto:YOUR_EMAIL@example.com"
+                       aria-label="Send an email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO IMAGE -->
+            <div class="hero-visual reveal">
+
+                <div class="image-decoration decoration-one"></div>
+                <div class="image-decoration decoration-two"></div>
+
+                <div class="portrait-frame">
+
+                    <img
+                        src="assets/images/iqra.jpg"
+                        alt="Portrait of Iqra Azhar"
+                        class="portrait"
+                        onerror="this.style.display='none';
+                                 this.nextElementSibling.style.display='flex';"
+                    >
+
+                    <div class="portrait-placeholder">
+                        <span>IA</span>
+                        <small>Your photo goes here</small>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-top">
+                    <i class="fa-solid fa-code"></i>
+                    <div>
+                        <strong>Always Learning</strong>
+                        <span>Growing every day</span>
+                    </div>
+                </div>
+
+                <div class="floating-card card-bottom">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div>
+                        <strong>Building Projects</strong>
+                        <span>Ideas into reality</span>
+                    </div>
+                </div>
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUICK INTRODUCTION -->
+        <section class="quick-stats container reveal">
+
+            <div class="stat-item">
+                <span class="stat-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <div>
+                    <h3>Software Engineering</h3>
+                    <p>My Academic Field</p>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <span class="stat-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </span>
+                <div>
+                    <h3>Creative Thinking</h3>
+                    <p>My Approach</p>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <span class="stat-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </span>
+                <div>
+                    <h3>Continuous Growth</h3>
+                    <p>My Mindset</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="section container" id="about">
+
+            <div class="section-heading reveal">
+                <span class="section-label">GET TO KNOW ME</span>
+                <h2>More than just <span class="accent">code.</span></h2>
+                <p>A little about who I am and what drives me.</p>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-text glass-card reveal">
+
+                    <span class="small-icon">
+                        <i class="fa-regular fa-user"></i>
+                    </span>
+
+                    <h3>My Story</h3>
+
+                    <p>
+                        I'm Iqra Azhar, a Software Engineering student
+                        interested in technology, programming, and
+                        creative problem-solving.
+                    </p>
+
+                    <p>
+                        My goal is to strengthen my technical foundation,
+                        build practical projects, and develop the skills
+                        needed to create useful and reliable software.
+                    </p>
+
+                    <p>
+                        I believe that every project is an opportunity
+                        to learn something new and become a better developer.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Get in touch
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="about-details reveal">
+
+                    <div class="detail-card glass-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <span>Education</span>
+                            <h3>Software Engineering</h3>
+                            <p>Currently pursuing my degree</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card glass-card">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <span>Interests</span>
+                            <h3>Programming & Web Development</h3>
+                            <p>Learning through practical projects</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card glass-card">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <div>
+                            <span>Current Focus</span>
+                            <h3>Building My Skills</h3>
+                            <p>Improving through consistent practice</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+        <section class="section section-alt" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">WHAT I'M LEARNING</span>
+                    <h2>My technical <span class="accent">toolkit.</span></h2>
+                    <p>
+                        The technologies and concepts I'm exploring
+                        on my software engineering journey.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon html-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                        <p>Web page structure</p>
+                        <span class="skill-tag">Learning</span>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon css-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>Styling and layouts</p>
+                        <span class="skill-tag">Learning</span>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon js-icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Interactive web experiences</p>
+                        <span class="skill-tag">Learning</span>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon cpp-icon">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h3>C++</h3>
+                        <p>Programming fundamentals</p>
+                        <span class="skill-tag">Learning</span>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon cs-icon">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3>C# & OOP</h3>
+                        <p>Object-oriented concepts</p>
+                        <span class="skill-tag">Learning</span>
+                    </article>
+
+                    <article class="skill-card glass-card reveal">
+                        <div class="skill-icon git-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control</p>
+                        <span class="skill-tag">Exploring</span>
+                    </article>
+
+                </div>
+
+                <p class="skills-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Skill labels describe my learning stage, not a
+                    measured proficiency score.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS SECTION -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading reveal">
+                <span class="section-label">MY WORK</span>
+                <h2>Projects with a <span class="accent">purpose.</span></h2>
+                <p>
+                    A collection of projects built to practice,
+                    experiment, and solve problems.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-preview preview-portfolio">
+                        <div class="preview-window">
+                            <div class="preview-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="preview-content">
+                                <span class="preview-logo">&lt;/&gt;</span>
+                                <div class="preview-line long"></div>
+                                <div class="preview-line medium"></div>
+                                <div class="preview-button"></div>
+                            </div>
+                        </div>
+
+                        <span class="project-number">01</span>
+                    </div>
+
+                    <div class="project-body">
+
+                        <span class="project-category">WEB DEVELOPMENT</span>
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+                            A personal website designed to showcase
+                            my background, technical skills, and projects.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Project details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-preview preview-todo">
+                        <div class="todo-preview">
+                            <h4>My Tasks<span>.</span></h4>
+                            <div class="todo-row">
+                                <i class="fa-regular fa-circle-check"></i>
+                                Plan the day
+                            </div>
+                            <div class="todo-row">
+                                <i class="fa-regular fa-circle"></i>
+                                Practice coding
+                            </div>
+                            <div class="todo-row">
+                                <i class="fa-regular fa-circle"></i>
+                                Learn something new
+                            </div>
+                        </div>
+
+                        <span class="project-number">02</span>
+                    </div>
+
+                    <div class="project-body">
+
+                        <span class="project-category">PRODUCTIVITY</span>
+
+                        <h3>To-Do List App</h3>
+
+                        <p>
+                            A task-management application concept for
+                            organizing daily activities and priorities.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Project details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card glass-card reveal">
+
+                    <div class="project-preview preview-weather">
+                        <div class="weather-preview">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                            <span class="weather-temp">26°</span>
+                            <span class="weather-city">Your City</span>
+                        </div>
+
+                        <span class="project-number">03</span>
+                    </div>
+
+                    <div class="project-body">
+
+                        <span class="project-category">WEB APPLICATION</span>
+
+                        <h3>Weather App</h3>
+
+                        <p>
+                            A weather application concept for displaying
+                            current conditions and local forecasts.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Project details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="projects-note">
+                The To-Do List and Weather App cards are starter project
+                concepts. Replace them with your actual projects as you
+                build them.
+            </p>
+
+        </section>
+
+
+        <!-- EXPERIENCE / EDUCATION -->
+        <section class="section section-alt" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="section-label">MY JOURNEY</span>
+                    <h2>Learning today. <span class="accent">Building tomorrow.</span></h2>
+                    <p>
+                        Every step adds something valuable to my journey
+                        in software engineering.
+                    </p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-date">CURRENT</span>
+                            <h3>Software Engineering Student</h3>
+                            <h4>University Education</h4>
+
+                            <p>
+                                Studying software engineering fundamentals
+                                and developing an understanding of
+                                programming, data structures, and software
+                                development.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+                        <div class="timeline-marker"></div>
+
+                        <div class="timeline-card glass-card">
+                            <span class="timeline-date">ONGOING</span>
+                            <h3>Practical Project Development</h3>
+                            <h4>Independent Learning</h4>
+
+                            <p>
+                                Applying classroom concepts to small
+                                projects, exploring web technologies,
+                                and improving my problem-solving skills.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="section container" id="contact">
+
+            <div class="contact-box glass-card reveal">
+
+                <div class="contact-content">
+
+                    <span class="section-label">HAVE A PROJECT IN MIND?</span>
+
+                    <h2>
+                        Let's create something
+                        <span class="accent">meaningful.</span>
+                    </h2>
+
+                    <p>
+                        Have a question, an idea, or an opportunity
+                        to collaborate? I'd love to hear from you.
+                    </p>
+
+                    <a href="mailto:YOUR_EMAIL@example.com"
+                       class="btn btn-primary">
+                        Email Me
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+
+                </div>
+
+                <div class="contact-decoration">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span>iqra<span class="logo-dot">.</span></span>
+            </a>
+
+            <p>
+                Designed and built with curiosity by Iqra Azhar.
+            </p>
+
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; <span id="current-year"></span> Iqra Azhar.
+                All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```
